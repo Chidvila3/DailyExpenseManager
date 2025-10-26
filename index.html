@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Expense Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Daily Expense Manager</h1>
+
+    <div class="input-section">
+      <input type="text" id="desc" placeholder="Expense description" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <input type="date" id="date" />
+      <select id="category">
+        <option value="">Category</option>
+        <option>Food</option>
+        <option>Transport</option>
+        <option>Shopping</option>
+        <option>Entertainment</option>
+        <option>Other</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <h2>Expense List</h2>
+    <ul id="expenseList"></ul>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
